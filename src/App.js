@@ -22,7 +22,6 @@ useEffect(()=>{
   }).catch(error=>console.log(error))
 },[])
 
-console.log(personajes)
 
 
   return (
@@ -38,7 +37,7 @@ console.log(personajes)
       <div className="card" style={{width:"18rem", height:"18rem"}}>
      
       <a href={per.urls[0].url}><img src={`${per.thumbnail.path}.${per.thumbnail.extension}`} className="card-img-top"/></a> 
-            <div class="card-body">
+            <div className="card-body">
             <h5 className="card-title">{per.title}</h5>
             </div>
       </div>
